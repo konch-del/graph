@@ -1,0 +1,3 @@
+closenessCentrality: 16237255
+eigenvectorCentrality: 59549503
+betweennessCentrality: 16237255
