@@ -52,21 +52,6 @@ public class ApiVk {
                     }
                     //костыль, чтобы не ругался вк
                     Thread.sleep(1000);
-                    //обработка исключения со стороны АПИ
-                    try {
-                        //добавление друзей друзей
-                        List<Integer> anotherFriends = vk.friends().get(actor).userId(idFriendForFriends).execute().getItems();
-                        for (Integer anotherFriend : anotherFriends){
-                            if(!graph.containsVertex(anotherFriend)) {
-                                graph.addVertex(anotherFriend);
-                            }
-                            if(!graph.containsEdge(idFriendForFriends, anotherFriend)) {
-                                graph.addEdge(idFriendForFriends, anotherFriend);
-                            }
-                        }
-                    }catch (Exception ignored){
-
-                    }
                 }
             }catch (Exception ignored){
 
