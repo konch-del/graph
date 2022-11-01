@@ -21,7 +21,7 @@ public class ApiVk {
         TransportClient transportClient = new HttpTransportClient();
         VkApiClient vk = new VkApiClient(transportClient);
         //авторизация вк
-        UserActor actor = new UserActor(132011950, "vk1.a.Zy5Goc-47L5znusU0RU1qmQqxGLF_cO7SPaGXHthxFAQliDPqBmv6XD2485VDEusqYMXnWxGvS4LuHvkEeEXkVfj2VRMvuJOum2wDhQMIqkaY1F4ugbcXNmZdSu5Oqc6ZREdA_2SZ62pCJO1lnqQVoUMIeFV19mDQVSRPuRmEWqvHwnkDio9ubDSRs3RkVHFIK6SEtcr_jCYMpUUrF3U9Q");
+        UserActor actor = new UserActor(132011950, accessToken);
         //запрос на друзей
         FriendsGetQuery getFriendsForStartUser = vk.friends().get(actor).userId(userId).listId(25);
         //костыль, чтобы не ругался вк
