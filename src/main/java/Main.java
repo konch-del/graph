@@ -10,6 +10,7 @@ public class Main {
         GraphUtils.printGraphInSVG(apiVk.getGraph(), "D:\\java_new\\graph\\graph_execute.svg");
         GraphUtils.printGraphInVZ(apiVk.getGraph(), "D:\\java_new\\graph\\graph_execute.vz");
         GraphUtils.saveGraph(apiVk.getGraph(), "D:\\java_new\\graph\\graph_execute.ser");
+        GraphUtils.printGraphInCSV(apiVk.getGraph(), "D:\\java_new\\graph\\graph_execute.csv");
         GraphUtils.printStats(apiVk.getGraph(), "D:\\java_new\\graph\\stats_execute.txt");
     }
 }
