@@ -1,3 +1,1 @@
-closenessCentrality: 16237255
-eigenvectorCentrality: 59549503
-betweennessCentrality: 16237255
+closenessCentrality: 16237255eigenvectorCentrality: 59549503betweennessCentrality: 16237255
